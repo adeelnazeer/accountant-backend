@@ -25,9 +25,6 @@
       "type": "string",
       "required": true
     },
-    "test": {
-      "type": "blocks"
-    },
     "description": {
       "type": "customField",
       "options": {
@@ -35,6 +32,16 @@
       },
       "required": true,
       "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "img": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

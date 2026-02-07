@@ -385,10 +385,10 @@ export interface ApiBlogBlog extends Schema.CollectionType {
           preset: 'default';
         }
       >;
+    img: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     publishedAt: Attribute.DateTime;
     shortDescreption: Attribute.String & Attribute.Required;
     slug: Attribute.String & Attribute.Required & Attribute.Unique;
-    test: Attribute.Blocks;
     title: Attribute.String & Attribute.Required;
     updatedAt: Attribute.DateTime;
     updatedBy: Attribute.Relation<'api::blog.blog', 'oneToOne', 'admin::user'> &
